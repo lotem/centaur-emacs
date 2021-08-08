@@ -32,11 +32,12 @@
 
 ;; C/C++ Mode
 (use-package cc-mode
-  :ensure nil
+  :ensure google-c-style
   :bind (:map c-mode-base-map
          ("C-c c" . compile))
-  :hook (c-mode-common . (lambda () (c-set-style "stroustrup")))
-  :init (setq-default c-basic-offset 4)
+  :hook (c-mode-common . (lambda ()
+                           (google-set-c-style)
+                           (google-make-newline-indent)))
   :config
   (use-package modern-cpp-font-lock
     :diminish
