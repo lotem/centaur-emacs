@@ -149,5 +149,7 @@
 (require 'init-elixir)
 (require 'init-web)
 
+(require 'init-ime)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; init.el ends here
